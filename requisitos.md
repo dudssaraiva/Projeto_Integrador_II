@@ -43,6 +43,39 @@ Armazenar dados coletados e permitir consulta das informações anteriores.
 Sensores, Microcontrolador e Componentes eletrônicos.
 ### Software
 Linguagem de programação, Plataforma de monitoramento, Banco de dados e o próprio GitHub.
+
+## Requisitos funcionais
+### RF01 — Coleta de dados
+### RF02 — Transmissão de dados
+### RF03 — Visualização dos dados
+### RF04 — Identificação de alterações
+### RF05 — Emissão de alertas
+### RF06 — Armazenamento dos dados
+
+## Requisitos não funcionais
+### RNF01 — Usabilidade
+### RNF02 — Segurança
+### RNF03 — Confiabilidade
+### RNF04 — Disponibilidade
+
+## Requisitos de hardware
+- Dispositivo de processamento;
+- Sensores necessários para coleta das informações;
+- Componentes eletrônicos necessários para funcionamento do protótipo;
+- Fonte de alimentação adequada;
+- Meio de comunicação para transmissão dos dados.
+  
+## Requisitos de software/ usuário
+### Usuário administrador
+- acessar o sistema;
+- visualizar os dados;
+- acompanhar alertas;
+- consultar informações históricas.
+
+### Usuário responsável pelo monitoramento
+- acompanhar os parâmetros;
+- verificar alertas;
+- analisar as informações coletadas.
     
 ## Status do projeto
 Em andamento ainda!
