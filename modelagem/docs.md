@@ -21,7 +21,7 @@ A solução será organizada em diferentes componentes:
 
 O relacionamento entre esses componentes é apresentado no diagrama de arquitetura.
 
-![Arquitetura geral](diagramas/arquitetura.png)
+https://github.com/dudssaraiva/Projeto_Integrador_II/blob/836f910955b6902d7f11665a55f575ff36176342/ARQUITETURA%20GERAL%20DO%20BURITI.drawio.png
 
 
 ## 4. Fluxo de funcionamento
@@ -39,7 +39,7 @@ O funcionamento inicial da solução será representado pelo seguinte fluxo:
 9. Geração de alerta quando necessário;
 10. Continuidade do monitoramento.
 
-![Fluxo de funcionamento](diagramas/fluxo-sistema.png)
+https://github.com/dudssaraiva/Projeto_Integrador_II/blob/836f910955b6902d7f11665a55f575ff36176342/FLUXOGRAMA%20DE%20FUNCIONAMENTO.drawio.png
 
 
 ## 5. Fluxo de dados
@@ -48,7 +48,7 @@ Os dados deverão percorrer o seguinte fluxo:
 
 Sensor → Microcontrolador → Comunicação → Processamento/Servidor → Banco de Dados → Interface → Usuário.
 
-![Fluxo de dados](diagramas/fluxo-dados.png)
+https://github.com/dudssaraiva/Projeto_Integrador_II/blob/32a5a30b0ed5c34a786b0be9bf2c536503f5a27b/FLUXO%20DOS%20DADOS.drawio.png
 
 
 ## 6. Modelo de dados
