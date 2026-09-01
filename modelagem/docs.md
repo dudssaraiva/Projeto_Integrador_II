@@ -21,7 +21,7 @@ A solução será organizada em diferentes componentes:
 
 O relacionamento entre esses componentes é apresentado no diagrama de arquitetura.
 
-https://github.com/dudssaraiva/Projeto_Integrador_II/blob/836f910955b6902d7f11665a55f575ff36176342/ARQUITETURA%20GERAL%20DO%20BURITI.drawio.png
+https://github.com/dudssaraiva/Projeto_Integrador_II/blob/ab7d19eca8e93dd1d67a476166af1d8b340b2ffd/modelagem/ARQUITETURA%20GERAL.drawio.png
 
 
 ## 4. Fluxo de funcionamento
@@ -39,7 +39,7 @@ O funcionamento inicial da solução será representado pelo seguinte fluxo:
 9. Geração de alerta quando necessário;
 10. Continuidade do monitoramento.
 
-https://github.com/dudssaraiva/Projeto_Integrador_II/blob/836f910955b6902d7f11665a55f575ff36176342/FLUXOGRAMA%20DE%20FUNCIONAMENTO.drawio.png
+https://github.com/dudssaraiva/Projeto_Integrador_II/blob/a7a6e14981ac1f2ee8e8fb1c743ff8d6c5a7694a/modelagem/FLUXOGRAMA%20DE%20FUNCIONAMENTO.drawio.png
 
 
 ## 5. Fluxo de dados
@@ -48,14 +48,14 @@ Os dados deverão percorrer o seguinte fluxo:
 
 Sensor → Microcontrolador → Comunicação → Processamento/Servidor → Banco de Dados → Interface → Usuário.
 
-https://github.com/dudssaraiva/Projeto_Integrador_II/blob/32a5a30b0ed5c34a786b0be9bf2c536503f5a27b/FLUXO%20DOS%20DADOS.drawio.png
+https://github.com/dudssaraiva/Projeto_Integrador_II/blob/a7a6e14981ac1f2ee8e8fb1c743ff8d6c5a7694a/modelagem/FLUXO%20DOS%20DADOS.drawio.png
 
 
 ## 6. Modelo de dados
 
 O modelo de dados inicial deverá representar as principais informações utilizadas pelo sistema, incluindo dispositivos, sensores, parâmetros, leituras e, quando aplicável, usuários e alertas.
 
-![Modelo de dados](diagramas/modelo-dados.png)
+https://github.com/dudssaraiva/Projeto_Integrador_II/blob/d132a75c38342126d2b97f36cffdff5213c42960/modelagem/MODELO%20DE%20DADOS.drawio.png
 
 
 ## 7. Interface
@@ -72,6 +72,7 @@ Entre os elementos previstos estão:
 - Alertas, quando aplicáveis.
 
 O protótipo da interface será desenvolvido em ferramenta de prototipação e documentado nesta seção.
+https://github.com/dudssaraiva/Projeto_Integrador_II/blob/23b11ce5bbf9a62a1ce6692ed3e52541cd9c90ef/modelagem/PROT%C3%93TIPO%20DA%20INTERFACE.drawio.png
 
 
 ## 8. Tecnologias e componentes
@@ -95,24 +96,13 @@ Nesta etapa, serão definidas as tecnologias e os componentes necessários para 
 - Interface: [definir]
 
 
-## 9. Decisões arquiteturais
-
-As principais decisões técnicas serão registradas nesta seção juntamente com suas respectivas justificativas.
-
-| Decisão | Alternativas avaliadas | Escolha | Justificativa |
-| Microcontrolador | A definir | A definir | A definir |
-| Sensores | A definir | A definir | A definir |
-| Comunicação | A definir | A definir | A definir |
-| Banco de dados | A definir | A definir | A definir |
-
-
-## 10. Relação com os requisitos
+## 9. Relação com os requisitos
 
 A modelagem deverá atender aos requisitos definidos na Etapa 1.
 
 As relações entre requisitos, tarefas do backlog e elementos da arquitetura serão utilizadas para garantir a rastreabilidade do projeto.
 
 
-## 11. Conclusão
+## 10. Conclusão
 
 A modelagem apresentada estabelece uma visão inicial da arquitetura do Buriti Monitor e serve como base para o desenvolvimento das próximas etapas do projeto. Os elementos poderão ser refinados conforme as decisões técnicas e a implementação da solução avancem.
