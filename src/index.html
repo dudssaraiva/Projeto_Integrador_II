@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buriti Monitor</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- BARRA LATERAL -->
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    💧
+                </div>
+
+                <div>
+                    <h1>Buriti Monitor</h1>
+                    <span>Monitoramento inteligente da água</span>
+                </div>
+
+            </div>
+
+            <nav class="menu">
+
+                <p class="menu-title">MENU PRINCIPAL</p>
+
+                <button class="menu-item active" data-page="dashboard">
+                    <span>⌂</span>
+                    Dashboard
+                </button>
+
+                <button class="menu-item" data-page="monitoramento">
+                    <span>◉</span>
+                    Monitoramento
+                </button>
+
+                <button class="menu-item" data-page="historico">
+                    <span>▣</span>
+                    Histórico
+                </button>
+
+                <button class="menu-item" data-page="alertas">
+                    <span>⚠</span>
+                    Alertas
+                </button>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                <span>Água • Natureza • Tecnologia</span>
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main">
+
+            <!-- CABEÇALHO -->
+            <header class="topbar">
+
+                <div>
+                    <h2 id="page-title">Dashboard — Buriti Monitor</h2>
+
+                    <p id="page-subtitle">
+                        Acompanhe as informações coletadas pelos dispositivos
+                    </p>
+                </div>
+
+                <div class="connection-status">
+                    <span class="status-dot"></span>
+                    Sistema conectado
+                </div>
+
+            </header>
+
+
+            <!-- CONTEÚDO -->
+            <section class="content">
+
+                <!-- ===================== -->
+                <!-- DASHBOARD -->
+                <!-- ===================== -->
+
+                <div class="page active-page" id="dashboard">
+
+                    <h3 class="section-title">
+                        Visão geral do monitoramento
+                    </h3>
+
+                    <div class="cards">
+
+                        <div class="info-card">
+                            <div class="card-icon blue">
+                                ◉
+                            </div>
+
+                            <div>
+                                <span>Status do dispositivo</span>
+                                <strong id="device-status">
+                                    Online
+                                </strong>
+
+                                <small>
+                                    Monitoramento ativo
+                                </small>
+                            </div>
+                        </div>
+
+
+                        <div class="info-card">
+                            <div class="card-icon light-blue">
+                                ◷
+                            </div>
+
+                            <div>
+                                <span>Última atualização</span>
+
+                                <strong id="last-update">
+                                    --:--
+                                </strong>
+
+                                <small>
+                                    Sincronização recente
+                                </small>
+                            </div>
+                        </div>
+
+
+                        <div class="info-card">
+                            <div class="card-icon turquoise">
+                                ≋
+                            </div>
+
+                            <div>
+                                <span>Leituras atuais</span>
+
+                                <strong>
+                                    3 parâmetros
+                                </strong>
+
+                                <small>
+                                    Em monitoramento
+                                </small>
+                            </div>
+                        </div>
+
+
+                        <div class="info-card alert-card">
+                            <div class="card-icon green">
+                                ⚠
+                            </div>
+
+                            <div>
+                                <span>Alertas</span>
+
+                                <strong id="alert-count">
+                                    0 alertas
+                                </strong>
+
+                                <small>
+                                    Situações identificadas
+                                </small>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-grid">
+
+                        <!-- GRÁFICO -->
+                        <div class="panel chart-panel">
+
+                            <div class="panel-header">
+
+                                <div>
+                                    <h4>Histórico de medições</h4>
+
+                                    <p>
+                                        Evolução das leituras ao longo do tempo
+                                    </p>
+                                </div>
+
+                                <span class="period">
+                                    Últimas 24 horas
+                                </span>
+
+                            </div>
+
+                            <div class="chart">
+
+                                <div class="chart-y">
+                                    Valor
+                                </div>
+
+                                <div class="chart-area">
+
+                                    <div class="grid-line"></div>
+                                    <div class="grid-line"></div>
+                                    <div class="grid-line"></div>
+                                    <div class="grid-line"></div>
+
+                                    <svg
+                                        viewBox="0 0 600 220"
+                                        preserveAspectRatio="none"
+                                    >
+
+                                        <polyline
+                                            id="chart-line-1"
+                                            points=""
+                                        />
+
+                                        <polyline
+                                            id="chart-line-2"
+                                            points=""
+                                        />
+
+                                        <polyline
+                                            id="chart-line-3"
+                                            points=""
+                                        />
+
+                                    </svg>
+
+                                </div>
+
+                                <div class="chart-x">
+                                    Tempo
+                                </div>
+
+                            </div>
+
+                            <div class="legend">
+
+                                <span>
+                                    <i class="legend-blue"></i>
+                                    Parâmetro 1
+                                </span>
+
+                                <span>
+                                    <i class="legend-turquoise"></i>
+                                    Parâmetro 2
+                                </span>
+
+                                <span>
+                                    <i class="legend-green"></i>
+                                    Parâmetro 3
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ALERTAS -->
+                        <div class="panel alerts-panel">
+
+                            <div class="panel-header">
+
+                                <div>
+                                    <h4>Alertas do sistema</h4>
+
+                                    <p>
+                                        Acompanhe possíveis condições de atenção
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div id="dashboard-alerts">
+
+                                <div class="alert-item warning">
+                                    <strong>
+                                        ⚠ Monitoramento
+                                    </strong>
+
+                                    <span>
+                                        Nenhuma condição crítica identificada.
+                                    </span>
+                                </div>
+
+                                <div class="alert-item success">
+                                    <strong>
+                                        ● Sistema operacional
+                                    </strong>
+
+                                    <span>
+                                        Monitoramento contínuo ativo.
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ===================== -->
+                <!-- MONITORAMENTO -->
+                <!-- ===================== -->
+
+                <div class="page" id="monitoramento">
+
+                    <h3 class="section-title">
+                        Monitoramento
+                    </h3>
+
+                    <p class="section-description">
+                        Acompanhe as leituras atuais dos parâmetros monitorados.
+                    </p>
+
+                    <div class="monitor-grid">
+
+                        <div class="measurement-card">
+                            <span>Parâmetro 1</span>
+                            <strong id="value-1">--</strong>
+                            <small>Leitura atual</small>
+                        </div>
+
+                        <div class="measurement-card">
+                            <span>Parâmetro 2</span>
+                            <strong id="value-2">--</strong>
+                            <small>Leitura atual</small>
+                        </div>
+
+                        <div class="measurement-card">
+                            <span>Parâmetro 3</span>
+                            <strong id="value-3">--</strong>
+                            <small>Leitura atual</small>
+                        </div>
+
+                    </div>
+
+                    <div class="panel monitoring-status">
+
+                        <h4>Status do monitoramento</h4>
+
+                        <div class="status-row">
+                            <span>Dispositivo</span>
+                            <strong class="online">
+                                Online
+                            </strong>
+                        </div>
+
+                        <div class="status-row">
+                            <span>Comunicação</span>
+                            <strong class="online">
+                                Ativa
+                            </strong>
+                        </div>
+
+                        <div class="status-row">
+                            <span>Última leitura</span>
+                            <strong id="monitor-time">
+                                --
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ===================== -->
+                <!-- HISTÓRICO -->
+                <!-- ===================== -->
+
+                <div class="page" id="historico">
+
+                    <h3 class="section-title">
+                        Histórico de medições
+                    </h3>
+
+                    <p class="section-description">
+                        Consulte as informações registradas pelo sistema.
+                    </p>
+
+                    <div class="panel table-panel">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Hora</th>
+                                    <th>Parâmetro</th>
+                                    <th>Valor</th>
+                                    <th>Situação</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="history-table">
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ===================== -->
+                <!-- ALERTAS -->
+                <!-- ===================== -->
+
+                <div class="page" id="alertas">
+
+                    <h3 class="section-title">
+                        Alertas
+                    </h3>
+
+                    <p class="section-description">
+                        Situações identificadas durante o monitoramento.
+                    </p>
+
+                    <div
+                        class="alert-list"
+                        id="alerts-list"
+                    >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RODAPÉ -->
+
+            <footer>
+                Buriti Monitor — Projeto Integrador II
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
