@@ -2,6 +2,7 @@
 
 ## Sobre o projeto
 O **Buriti Monitor** é uma solução baseada em *IoT* desenvolvida para auxiliar no monitoramento da quantidade e da qualidade da água. A proposta utiliza sensores para coletar informações do ambiente e disponibilizá-las para acompanhamento, possibilitando a identificação de alterações e situações que necessitem de atenção.
+> **Observação:** nesta versão do projeto, as leituras são simuladas para demonstrar o funcionamento do protótipo. A integração com sensores físicos não faz parte desta versão final.
 
 ## Problema
 Dificuldade de acompanhar a situação da água continuamente, falta de informações em tempo real, possibilidade de desperdício da água, dificuldade para identificar alterações rapidamente e necessidade de acompanhamento mais eficiente dos reservatórios.
@@ -28,15 +29,22 @@ O funcionamento segue um fluxo dessa forma:
 6. O sistema pode identificar situações fora dos parâmetros definidos;
 7. Alertas podem ser emitidos quando necessário.
 
-## Principais funcionalidades
-### Monitoramento
-Coletar dados por sensores, monitorar quantidade de água e parâmetros relacionados à qualidade da água e atualizar informações do sistema.
-### Visualização
-Exibir os dados coletados, permitir acompanhamento das condições monitoradas e apresentar informações de maneira organizada.
-### Alertas 
-Identificar valores fora dos parâmetros estabelecidos e informar o usuário sobre situações anormais.
-### Histórico
-Armazenar dados coletados e permitir consulta das informações anteriores.
+## Funcionalidades
+O protótipo possui as seguintes funcionalidades:
+
+- Dashboard com visão geral do monitoramento;
+- apresentação das leituras atuais;
+- atualização automática das leituras;
+- classificação das situações em:
+  - Normal;
+  - Atenção;
+  - Alerta;
+- registro de ocorrências de Atenção e Alerta;
+- histórico de medições;
+- visualização de alertas;
+- indicação do status do dispositivo;
+- gráfico de acompanhamento das leituras;
+- interface web organizada para acompanhamento das informações.
 
 ## Tecnologias Utilizadas
 ### Hardware
@@ -45,10 +53,88 @@ Armazenar dados coletados e permitir consulta das informações anteriores.
 - Componentes eletrônicos.
   
 ### Software
-- Linguagem de programação
-- Plataforma de monitoramento
-- Banco de dados
-- O próprio GitHub.
+- HTML5
+- CSS3
+- JavaScript
+- Visual Studio Code
+- Git
+- GitHub
+- Trello
+
+## Guia de Execução
+### Como executar
+#### Pré-requisitos
+Para executar o protótipo, é necessário possuir:
+- um navegador web atualizado;
+- Visual Studio Code;
+- os arquivos do projeto.
+#### Execução pelo Visual Studio Code
+1. Baixe ou clone este repositório.
+2. Abra a pasta do projeto no Visual Studio Code.
+3. Acesse a pasta src.
+4. Localize o arquivo index.html.
+5. Abra o arquivo utilizando um servidor local, como o Live Server.
+6. O sistema será aberto no navegador.
+
+### Execução
+Após abrir o sistema, o usuário poderá acessar as seguintes áreas:
+- Dashboard
+- Monitoramento
+- Histórico
+- Alertas
+
+### Funcionamento
+O protótipo utiliza dados simulados para representar o comportamento de um sistema de monitoramento.
+As leituras são atualizadas automaticamente e classificadas de acordo com as condições estabelecidas no código do protótipo.
+As situações apresentadas são:
+
+1. Normal
+Representa uma leitura dentro da condição normal definida para a demonstração.
+2. Atenção
+Representa uma leitura que atingiu uma condição intermediária que requer atenção.
+3. Alerta
+Representa uma leitura que atingiu uma condição de alerta.
+
+Os valores utilizados para essas classificações são exclusivamente demonstrativos e não representam limites oficiais de qualidade da água.
+
+## Validação e testes
+Foram realizados testes funcionais para verificar:
+- inicialização do sistema;
+- navegação;
+- apresentação das leituras;
+- atualização automática;
+- classificação das situações;
+- registro de alertas;
+- histórico;
+- Dashboard;
+- interface;
+- execução do sistema.
+
+Os resultados e procedimentos detalhados estão disponíveis em testes/testes.md
+
+## Resultados finais
+Ao final da etapa de desenvolvimento, foi obtido um protótipo web funcional capaz de demonstrar:
+- acompanhamento das leituras;
+- atualização automática;
+- classificação das condições;
+- identificação de situações de atenção e alerta;
+- registro de ocorrências;
+- consulta do histórico;
+- apresentação de informações em um Dashboard.
+
+O protótipo permite demonstrar o funcionamento da proposta do Buriti Monitor em um ambiente web.
+
+### Limitações da versão atual
+A versão atual possui algumas limitações:
+- utilização de dados simulados;
+- ausência de sensores físicos;
+- ausência de integração com microcontrolador;
+- ausência de armazenamento permanente em banco de dados;
+- parâmetros e limites utilizados apenas para demonstração.
+Essas limitações fazem parte do escopo da versão atual do protótipo.
+
+### Documentação
+A documentação do projeto está organizada no repositório, incluindo requisitos do sistema, modelagem, diagramas, testes e validação e código-fonte do protótipo.
 
 ## Status
-Em desenvolvimento
+Concluído (aberto a alterações futuras)
