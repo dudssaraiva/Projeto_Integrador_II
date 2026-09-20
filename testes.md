@@ -40,10 +40,7 @@ CSS;
 JavaScript.
 ### 3.3 Forma de execução
 
-Durante o desenvolvimento e os testes iniciais, o sistema foi executado diretamente a partir do arquivo:
-
-src/index.html
-
+Durante o desenvolvimento e os testes iniciais, o sistema foi executado diretamente a partir do arquivo src/index.html.
 Posteriormente, para uma validação mais adequada do comportamento do navegador e do carregamento dos arquivos, recomenda-se executar o projeto por meio de um servidor local, como o Live Server disponível no Visual Studio Code.
 
 ## 4. Metodologia
@@ -67,10 +64,10 @@ Verificar se o sistema é carregado corretamente ao abrir o arquivo principal.
 
 Procedimento:
 
-Abrir o arquivo index.html.
-Observar a página inicial.
-Verificar a presença do Dashboard.
-Verificar se os elementos da interface são apresentados corretamente.
+1. Abrir o arquivo index.html.
+2. Observar a página inicial.
+3. Verificar a presença do Dashboard.
+4. Verificar se os elementos da interface são apresentados corretamente.
 
 Resultado esperado:
 O sistema deve ser carregado e apresentar o Dashboard do Buriti Monitor.
@@ -87,11 +84,11 @@ Verificar o funcionamento do menu principal.
 
 Procedimento:
 
-Acessar o Dashboard.
-Clicar em Monitoramento.
-Clicar em Histórico.
-Clicar em Alertas.
-Retornar ao Dashboard.
+1. Acessar o Dashboard.
+2. Clicar em Monitoramento.
+3. Clicar em Histórico.
+4. Clicar em Alertas.
+5. Retornar ao Dashboard.
 
 Resultado esperado:
 Cada opção deve direcionar para sua respectiva seção sem interromper o funcionamento do sistema.
@@ -108,9 +105,9 @@ Verificar se os valores dos parâmetros são apresentados na página de Monitora
 
 Procedimento:
 
-Acessar a página Monitoramento.
-Observar os cartões dos três parâmetros.
-Verificar se os valores são apresentados.
+1. Acessar a página Monitoramento.
+2. Observar os cartões dos três parâmetros.
+3. Verificar se os valores são apresentados.
 
 Resultado esperado:
 Os três parâmetros devem apresentar valores numéricos simulados.
@@ -127,10 +124,10 @@ Verificar se os valores são atualizados automaticamente.
 
 Procedimento:
 
-Acessar a página Monitoramento.
-Observar os valores apresentados.
-Aguardar o intervalo de atualização.
-Comparar os valores antes e depois da atualização.
+1. Acessar a página Monitoramento.
+2. Observar os valores apresentados.
+3. Aguardar o intervalo de atualização.
+4. Comparar os valores antes e depois da atualização.
 
 Resultado esperado:
 Os valores devem ser atualizados automaticamente após o intervalo definido no sistema.
@@ -147,9 +144,9 @@ Verificar se uma leitura dentro da faixa normal é identificada corretamente.
 
 Procedimento:
 
-Acessar a página Monitoramento.
-Observar uma leitura classificada pelo sistema.
-Aguardar novas leituras até que uma situação normal seja apresentada.
+1. Acessar a página Monitoramento.
+2. Observar uma leitura classificada pelo sistema.
+3. Aguardar novas leituras até que uma situação normal seja apresentada.
 
 Resultado esperado:
 A leitura deve apresentar a situação Normal.
@@ -166,10 +163,10 @@ Verificar se o sistema identifica uma situação que necessita de atenção.
 
 Procedimento:
 
-Permanecer na página Monitoramento.
-Aguardar uma nova leitura.
-Observar a classificação apresentada.
-Verificar se a situação Atenção é exibida quando o valor correspondente é atingido.
+1. Permanecer na página Monitoramento.
+2. Aguardar uma nova leitura.
+3. Observar a classificação apresentada.
+4. Verificar se a situação Atenção é exibida quando o valor correspondente é atingido.
 
 Resultado esperado:
 O sistema deve classificar a leitura como Atenção.
@@ -186,10 +183,10 @@ Verificar se o sistema identifica uma situação de alerta.
 
 Procedimento:
 
-Permanecer na página Monitoramento.
-Aguardar novas leituras.
-Observar os valores apresentados.
-Verificar a classificação da leitura.
+1. Permanecer na página Monitoramento.
+2. Aguardar novas leituras.
+3. Observar os valores apresentados.
+4. Verificar a classificação da leitura.
 
 Resultado esperado:
 Quando o valor ultrapassar o limite definido no protótipo, o sistema deve apresentar a situação Alerta.
@@ -206,11 +203,11 @@ Verificar se situações de Atenção e Alerta são registradas na página de Al
 
 Procedimento:
 
-Acessar o sistema.
-Aguardar uma situação de Atenção ou Alerta.
-Acessar a página Alertas.
-Observar a lista de ocorrências registradas.
-Aguardar outra ocorrência e verificar novamente a lista.
+1. Acessar o sistema.
+2. Aguardar uma situação de Atenção ou Alerta.
+3. Acessar a página Alertas.
+4. Observar a lista de ocorrências registradas.
+5. Aguardar outra ocorrência e verificar novamente a lista.
 
 Resultado esperado:
 As ocorrências devem ser registradas e apresentadas na página de Alertas.
@@ -227,9 +224,9 @@ Verificar a apresentação das leituras na página de Histórico.
 
 Procedimento:
 
-Acessar Histórico.
-Observar a tabela apresentada.
-Verificar as informações de data, hora, parâmetro, valor e situação.
+1. Acessar Histórico.
+2. Observar a tabela apresentada.
+3. Verificar as informações de data, hora, parâmetro, valor e situação.
 
 Resultado esperado:
 O sistema deve apresentar as leituras registradas em uma tabela organizada.
@@ -246,12 +243,12 @@ Verificar se o Dashboard apresenta um resumo das informações do monitoramento.
 
 Procedimento:
 
-Acessar o Dashboard.
-Observar os cartões de informação.
-Verificar o status do dispositivo.
-Verificar o horário da última atualização.
-Verificar a quantidade de alertas.
-Observar o gráfico e o painel de alertas.
+1. Acessar o Dashboard.
+2. Observar os cartões de informação.
+3. Verificar o status do dispositivo.
+4. Verificar o horário da última atualização.
+5. Verificar a quantidade de alertas.
+6. Observar o gráfico e o painel de alertas.
 
 Resultado esperado:
 O Dashboard deve apresentar informações gerais e resumidas sobre o monitoramento.
@@ -268,10 +265,10 @@ Verificar a organização visual e a utilização da interface em diferentes tam
 
 Procedimento:
 
-Abrir o sistema em uma janela maximizada.
-Reduzir o tamanho da janela.
-Observar os cartões e menus.
-Verificar se as informações continuam acessíveis.
+1. Abrir o sistema em uma janela maximizada.
+2. Reduzir o tamanho da janela.
+3. Observar os cartões e menus.
+4. Verificar se as informações continuam acessíveis.
 
 Resultado esperado:
 A interface deve permanecer utilizável em diferentes dimensões de tela.
@@ -289,10 +286,10 @@ Verificar se existem erros de JavaScript ou problemas relacionados ao carregamen
 
 Procedimento:
 
-Abrir o Buriti Monitor no Google Chrome.
-Pressionar F12.
-Acessar a aba Console.
-Observar as mensagens apresentadas pelo navegador.
+1. Abrir o Buriti Monitor no Google Chrome.
+2. Pressionar F12.
+3. Acessar a aba Console.
+4. Observar as mensagens apresentadas pelo navegador.
 
 Resultado esperado:
 Não devem ser apresentados erros relacionados ao código JavaScript ou ao funcionamento das funcionalidades do sistema.
@@ -301,7 +298,6 @@ Resultado obtido:
 Durante a execução direta do arquivo index.html pelo protocolo file://, o Console apresentou uma mensagem de segurança relacionada ao carregamento de uma URL file:// a partir de outra URL file://.
 
 A mensagem apresentada foi semelhante a:
-
 Unsafe attempt to load URL ... from frame with URL ...
 file:// URLs are treated as unique security origins.
 
@@ -313,34 +309,34 @@ Executar o projeto por meio de um servidor local, utilizando o Live Server do Vi
 Situação: Necessita de nova validação utilizando servidor local.
 
 ## 7. Resumo dos resultados
-ID	Funcionalidade	Situação
-T01	Inicialização do sistema	Aprovado
-T02	Navegação	Aprovado
-T03	Apresentação das leituras	Aprovado
-T04	Atualização automática	Aprovado
-T05	Situação Normal	Aprovado
-T06	Situação Atenção	Aprovado
-T07	Situação Alerta	Aprovado
-T08	Registro de ocorrências	Aprovado
-T09	Histórico	Aprovado
-T10	Dashboard	Aprovado
-T11	Interface	Em validação
-T12	Console do navegador	Requer nova validação
+**ID -	Funcionalidade -	Situação**
+- T01	- Inicialização do sistema	- Aprovado
+- T02 -	Navegação -	Aprovado
+- T03	- Apresentação das leituras -	Aprovado
+- T04	- Atualização automática - Aprovado
+- T05	- Situação Normal	- Aprovado
+- T06	- Situação Atenção	- Aprovado
+- T07	- Situação Alerta	- Aprovado
+- T08	- Registro de ocorrências	- Aprovado
+- T09	- Histórico	- Aprovado
+- T10	- Dashboard	- Aprovado
+- T11	- Interface	- Em validação
+- T12	- Console do navegador	- Requer nova validação
+
 ## 8. Evidências dos testes
 
 Durante a realização dos testes, foram observadas diferentes funcionalidades do sistema, incluindo:
 
-carregamento do Dashboard;
-navegação entre as páginas;
-apresentação dos parâmetros monitorados;
-atualização automática das leituras;
-classificação das situações;
-geração e registro de alertas;
-apresentação do histórico;
-atualização das informações do Dashboard.
+- carregamento do Dashboard;
+- navegação entre as páginas;
+- apresentação dos parâmetros monitorados;
+- atualização automática das leituras;
+- classificação das situações;
+- geração e registro de alertas;
+- apresentação do histórico;
+- atualização das informações do Dashboard.
 
 Também foram realizadas capturas de tela para registrar visualmente o funcionamento do protótipo.
-
 Uma das evidências registradas durante os testes apresenta o Dashboard do Buriti Monitor em funcionamento, com o sistema conectado, dispositivo identificado como online, atualização recente e ocorrência de alertas.
 
 Além disso, foi registrada a mensagem apresentada pelo Console do navegador durante a execução direta do arquivo index.html pelo protocolo file://. Essa ocorrência será utilizada como evidência da necessidade de realizar uma nova validação utilizando um servidor local.
@@ -348,30 +344,26 @@ Além disso, foi registrada a mensagem apresentada pelo Console do navegador dur
 ## 9. Validação das funcionalidades
 
 A partir dos testes realizados, foi possível verificar o funcionamento das principais funcionalidades implementadas no protótipo.
-
 O sistema apresenta uma interface organizada em quatro áreas principais:
 
-Dashboard, responsável pela apresentação geral das informações;
-Monitoramento, responsável pela apresentação das leituras atuais;
-Histórico, responsável pela visualização das medições;
-Alertas, responsável pela apresentação das ocorrências identificadas.
+- Dashboard, responsável pela apresentação geral das informações;
+- Monitoramento, responsável pela apresentação das leituras atuais;
+- Histórico, responsável pela visualização das medições;
+- Alertas, responsável pela apresentação das ocorrências identificadas.
 
 Também foi validada a classificação das leituras em três situações:
 
-Normal;
-Atenção;
-Alerta.
+- Normal;
+- Atenção;
+- Alerta.
 
 Essa classificação permite demonstrar como o sistema pode identificar diferentes condições a partir das informações recebidas.
-
 O registro das ocorrências também foi incorporado ao protótipo, permitindo visualizar situações de Atenção e Alerta na seção específica do sistema.
 
 ## 10. Validação em contexto
 
 Como o Buriti Monitor é um protótipo desenvolvido para demonstrar uma solução de monitoramento de água, a validação nesta etapa foi realizada principalmente por meio da utilização direta da interface e da simulação de dados.
-
 A ausência de sensores físicos nesta versão significa que não foi possível realizar testes com medições reais de água. Dessa forma, os testes realizados tiveram como foco a funcionalidade da aplicação, incluindo processamento das leituras simuladas, apresentação das informações, classificação das situações e registro de alertas.
-
 A utilização de dados simulados permite demonstrar o comportamento esperado da solução sem depender, nesta etapa, da montagem de um dispositivo físico.
 
 ## 11. Limitações identificadas
@@ -408,14 +400,14 @@ A etapa de testes também contribuiu para a identificação e correção de prob
 
 Entre os ajustes realizados estão:
 
-implementação da navegação entre as páginas;
-atualização dos valores apresentados no monitoramento;
-classificação das leituras em Normal, Atenção e Alerta;
-inclusão da identificação visual da situação de cada parâmetro;
-implementação do registro de ocorrências;
-atualização da página de Alertas;
-atualização das informações apresentadas no Dashboard;
-integração das funcionalidades entre as diferentes áreas do protótipo.
+- implementação da navegação entre as páginas;
+- atualização dos valores apresentados no monitoramento;
+- classificação das leituras em Normal, Atenção e Alerta;
+- inclusão da identificação visual da situação de cada parâmetro;
+- implementação do registro de ocorrências;
+- atualização da página de Alertas;
+- atualização das informações apresentadas no Dashboard;
+- integração das funcionalidades entre as diferentes áreas do protótipo.
 
 Esses ajustes contribuíram para aproximar o protótipo das funcionalidades definidas no planejamento do projeto.
 
